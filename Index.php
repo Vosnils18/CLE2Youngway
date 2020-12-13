@@ -3,8 +3,28 @@
     $lastname= '';
     $gender='';
     $date='';
-    if(isset($_POST['datepicker1'])) {
-        echo htmlspecialchars($_POST['datepicker1'], ENT_QUOTES);
+    if(isset($_POST['submit'])) {
+        if(isset($_POST['fisrtname'])) {
+            $fisrtname = $_POST['firstname'];
+        };
+        if(isset($_POST['lastname'])) {
+            $lastname = $_POST['lastname'];
+        };
+        if(isset($_POST['gender'])) {
+            $gender = $_POST['gender'];
+        };
+        if(isset($_POST['date'])) {
+            $date = $_POST['date'];
+        }
+
+        printf( 'Voornaam: %s
+        <br>Achternaam: %s
+        <br>Gender: %s
+        <br>Datum: %s',
+            htmlspecialchars(firstname, ENT_QUOTES),
+            htmlspecialchars(lastname, ENT_QUOTES),
+            htmlspecialchars(gender, ENT_QUOTES),
+            htmlspecialchars(date, ENT_QUOTES));
     }
 ?>
 
@@ -26,13 +46,13 @@
 <body>
 
 <form action="" method="post">
-    Voornaam: <input type="text" name="first_name"> <br>
-    Achternaam: <input type="text" name="last_name"> <br>
+    Voornaam: <input type="text" name="firstname"> <br>
+    Achternaam: <input type="text" name="lastname"> <br>
     Gender:
     <input type="radio" name="gender" value="m">Man <br>
         <input type="radio" name="gender" value="v">Vrouw <br>
         <input type="radio" name="gender" value="o">Overige <br>
-    <input type="text" id="datepicker" name="datepicker1">
+    <input type="text" id="datepicker" name="date">
     <input type="submit" name="submit" value="Datum selecteren">
 </form>
 
