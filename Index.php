@@ -1,6 +1,10 @@
 <?php
+    $firstname='';
+    $lastname= '';
+    $gender='';
+    $date='';
     if(isset($_POST['datepicker1'])) {
-        echo $_POST['datepicker1'];
+        echo htmlspecialchars($_POST['datepicker1'], ENT_QUOTES);
     }
 ?>
 
@@ -22,12 +26,15 @@
 <body>
 
 <form action="" method="post">
+    Voornaam: <input type="text" name="first_name"> <br>
+    Achternaam: <input type="text" name="last_name"> <br>
+    Gender:
+    <input type="radio" name="gender" value="m">Man <br>
+        <input type="radio" name="gender" value="v">Vrouw <br>
+        <input type="radio" name="gender" value="o">Overige <br>
     <input type="text" id="datepicker" name="datepicker1">
-    <input type="submit" value="Datum selecteren">
+    <input type="submit" name="submit" value="Datum selecteren">
 </form>
-
-</p>
-
 
 </body>
 </html>
