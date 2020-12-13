@@ -1,30 +1,49 @@
 <?php
+    $db = new mysqli(
+            'localhost',
+        'root',
+        '',
+        'test_youngway'
+    );
+
     $firstname='';
     $lastname= '';
     $gender='';
     $date='';
+
     if(isset($_POST['submit'])) {
-        if(isset($_POST['fisrtname'])) {
-            $fisrtname = $_POST['firstname'];
-        };
-        if(isset($_POST['lastname'])) {
+        $ok = true;
+        if(!isset($_POST['firstname']) || $_POST['firstname'] === '') {
+            $ok = false;
+        } else{
+            $firstname = $_POST['firstname'];
+        }
+        if(!isset($_POST['lastname']) || $_POST['lastname'] === '') {
+            $ok = false;
+        } else {
             $lastname = $_POST['lastname'];
-        };
-        if(isset($_POST['gender'])) {
+        }
+        if(!isset($_POST['gender']) || $_POST['gender'] === '') {
+            $ok = false;
+        }else {
             $gender = $_POST['gender'];
-        };
-        if(isset($_POST['date'])) {
+        }
+        if(!isset($_POST['date']) || $_POST['date'] === '') {
+            $ok = false;
+        } else {
             $date = $_POST['date'];
         }
 
-        printf( 'Voornaam: %s
-        <br>Achternaam: %s
-        <br>Gender: %s
-        <br>Datum: %s',
-            htmlspecialchars(firstname, ENT_QUOTES),
-            htmlspecialchars(lastname, ENT_QUOTES),
-            htmlspecialchars(gender, ENT_QUOTES),
-            htmlspecialchars(date, ENT_QUOTES));
+        if($ok) {
+            printf('Voornaam: %s
+            <br>Achternaam: %s
+            <br>Gender: %s
+            <br>Datum: %s',
+                htmlspecialchars($firstname, ENT_QUOTES),
+                htmlspecialchars($lastname, ENT_QUOTES),
+                htmlspecialchars($gender, ENT_QUOTES),
+                htmlspecialchars($date, ENT_QUOTES));
+        }
     }
 ?>
 
@@ -49,11 +68,11 @@
     Voornaam: <input type="text" name="firstname"> <br>
     Achternaam: <input type="text" name="lastname"> <br>
     Gender:
-    <input type="radio" name="gender" value="m">Man <br>
-        <input type="radio" name="gender" value="v">Vrouw <br>
+    <input type="radio" name="gender" value="m">Man
+        <input type="radio" name="gender" value="v">Vrouw
         <input type="radio" name="gender" value="o">Overige <br>
     <input type="text" id="datepicker" name="date">
-    <input type="submit" name="submit" value="Datum selecteren">
+    <input type="submit" name="submit" value="Verzenden">
 </form>
 
 </body>
