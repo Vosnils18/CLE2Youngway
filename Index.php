@@ -44,14 +44,14 @@
                 'localhost',
                 'root',
                 '',
-                'test_youngway'
-            );
+                'test_youngway');
+
             $sql = sprintf(
-                    "INSERT INTO customer (first_name, last_name, postal_code) VALUES ( '%s', '%s', '%s')",
+                    "INSERT INTO `customer`(`first_name`, `last_name`, `postal_code`) VALUES ('%s', '%s', '%s')",
                 $db->real_escape_string($firstname),
                 $db->real_escape_string($lastname),
-                $db->real_escape_string($postal)
-            );
+                $db->real_escape_string($postal));
+
             $db->query($sql);
             echo '<p>Gegevens opgeslagen!</p>';
             $db->close();
