@@ -82,9 +82,8 @@
 <form action="" method="post">
     Voornaam: <input type="text" name="firstname"> <br>
     Achternaam: <input type="text" name="lastname"> <br>
-    Gender:
-    <input type="text" name="postal"> <br>
-    <input type="text" id="datepicker" name="date"> <br>
+    Postcode: <input type="text" name="postal"> <br>
+    Datum selecteren: <input type="text" id="datepicker" name="date"> <br>
     <input type="submit" name="submit" value="Verzenden">
 </form>
 
