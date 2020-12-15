@@ -4,4 +4,3 @@ $db = new mysqli(       //koppeling met database (op pc van Nils voor nu), don't
     'root',
     '',
     'test_youngway');
-
