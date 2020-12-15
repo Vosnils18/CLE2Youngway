@@ -90,19 +90,23 @@
 <section>
 
 <h1>Taak aanmaken</h1>
-<p>Hier kunt u de gegevens van uw taak invullen zodat het kan worden geadverteert op de site Youngway.nl. </p>
 
-<h2>Details</h2>
+<h2>Persoonlijke details</h2>
+
 <form action="" method="post">
-    Voornaam: <input type="text" name="firstname"> <br>
-    Achternaam: <input type="text" name="lastname"> <br>
-    Postcode: <input type="text" name="postal"> <br>
-    Datum selecteren: <input type="text" id="datepicker" name="date"> <br><br>
+    Voornaam: <br><input type="text" name="firstname"> <br><br>
+    Achternaam: <br><input type="text" name="lastname"> <br><br>
+    Postcode: <br><input type="text" name="postal"> <br><br>
+    Straatnaam: <br><input type="text" name="streetname"> <br><br>
+    Huisnummer: <br><input type="text" name="housenumber"> <br><br>
+    Woonplaats: <br><input type="text" name="city"> <br><br>
+    Emailadres: <br><input type="text" name="email"> <br><br>
+    Telefoonnummer: <br><input type="text" name="phonenumber"> <br><br>
+    Datum selecteren: <br><input type="text" id="datepicker" name="date"> <br><br>
     <p>Beschrijving:</p>
     <textarea rows="4" cols="50" name="comment" form="usrform">Vul hier uw tekst in...</textarea><br>
     <input type="submit" name="submit" value="Verzenden">
     <br>
-
 </form>
 </section>
 
