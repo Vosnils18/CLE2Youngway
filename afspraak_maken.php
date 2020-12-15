@@ -1,10 +1,5 @@
 <?php
 
-$firstname='';
-$lastname= '';
-$postal='';
-$date='';
-
 require_once 'includes/database.php';
 $sql = 'SELECT * FROM customer';
 $result = $db->query($sql);
