@@ -4,8 +4,6 @@ header {
 }
 
 
-}
-
 body {
     font-family: Gill Sans, sans-serif;
     margin: 0;
@@ -42,7 +40,6 @@ li a:hover {
 }
 
 section {
-    background: clear;
     margin-left: 500px;
     margin-right: 500px;
     font-family: Gill Sans, sans-serif;
@@ -55,7 +52,7 @@ textarea {
 h1  {
     text-align: center;
     font-family: "Arial Black";
-    font-size: 30;
+    font-size: 30px;
     margin: 20px;
 
 }
@@ -72,7 +69,7 @@ input   {
     padding: 5px;
 }
 
-border-color: #E5E5E5;
+/*border-color: #E5E5E5;
 border-style: groove;
 border-width: 10px;
 background: white;
@@ -82,3 +79,4 @@ padding: 20px; (body opmaak)
 background-image: url("https://cdn.discordapp.com/attachments/756128187418935326/788394163883474944/360_F_266975389_sBNp4HyE8gG58U62Fv2A6JTsaAVtLMk4.jpg");
 background-repeat: no-repeat;
 background-size: cover; (body achtergrond)
+ */

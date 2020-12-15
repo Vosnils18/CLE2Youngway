@@ -1,57 +1,105 @@
 <?php
 
-    $firstname='';
-    $lastname= '';
-    $postal='';
-    $date='';
+    $firstName ='';
+    $lastName = '';
+    $streetName = '';
+    $houseNumber = '';
+    $city = '';
+    $postal ='';
+    $email = '';
+    $phoneNumber = '';
+    $title = '';
+    $description = '';
+    $hourlyWage = '';
+    $timeToComplete = '';
+    $deadline ='';
 
     if(isset($_POST['submit'])) {       //Niet aankomen, ik pas het zelf aan wanneer jij de form hebt bijgewerkt.
         $ok = true;
+
         if(!isset($_POST['firstname']) || $_POST['firstname'] === '') {
             $ok = false;
         } else{
-            $firstname = $_POST['firstname'];
+            $firstName = $_POST['firstname'];
         }
         if(!isset($_POST['lastname']) || $_POST['lastname'] === '') {
             $ok = false;
         } else {
-            $lastname = $_POST['lastname'];
+            $lastName = $_POST['lastname'];
+        }
+        if(!isset($_POST['street']) || $_POST['street'] === '') {
+            $ok = false;
+        }else {
+            $streetName = $_POST['street'];
+        }
+        if(!isset($_POST['housenumber']) || $_POST['housenumber'] === '') {
+            $ok = false;
+        } else {
+            $houseNumber = $_POST['housenumber'];
+        }
+        if(!isset($_POST['city']) || $_POST['city'] === '') {
+            $ok = false;
+        } else{
+            $city = $_POST['city'];
         }
         if(!isset($_POST['postal']) || $_POST['postal'] === '') {
             $ok = false;
-        }else {
+        } else{
             $postal = $_POST['postal'];
         }
-        if(!isset($_POST['date']) || $_POST['date'] === '') {
+        if(!isset($_POST['email']) || $_POST['email'] === '') {
             $ok = false;
-        } else {
-            $date = $_POST['date'];
+        } else{
+            $email = $_POST['email'];
+        }
+        if(!isset($_POST['phone']) || $_POST['phone'] === '') {
+            $ok = false;
+        } else{
+            $phoneNumber = $_POST['phone'];
+        }
+        if(!isset($_POST['title']) || $_POST['title'] === '') {
+            $ok = false;
+        } else{
+            $title = $_POST['title'];
+        }
+        if(!isset($_POST['description']) || $_POST['description'] === '') {
+            $ok = false;
+        } else{
+            $description = $_POST['description'];
+        }
+        if(isset($_POST['deadline'])) {
+            $deadline = $_POST['deadline'];
+        }
+        if(isset($_POST['hourlywage'])) {
+            $hourlyWage = $_POST['hourlywage'];
+        }
+        if(isset($_POST['timetocomplete'])) {
+            $timeToComplete = $_POST['timetocomplete'];
         }
 
-        if($ok) {
-            printf('Voornaam: %s
-            <br>Achternaam: %s
-            <br>Postcode: %s
-            <br>Datum: %s',
-                htmlspecialchars($firstname, ENT_QUOTES),
-                htmlspecialchars($lastname, ENT_QUOTES),
-                htmlspecialchars($postal, ENT_QUOTES),
-                htmlspecialchars($date, ENT_QUOTES));
-        }
+    }
 
-        if($ok) {
-            require_once 'includes/database.php';
+    if($ok === true) {
+        require_once 'includes/database.php';
 
-            $sql = sprintf(
-                    "INSERT INTO `customer`(`first_name`, `last_name`, `postal_code`) VALUES ('%s', '%s', '%s')",
-                $db->real_escape_string($firstname),
-                $db->real_escape_string($lastname),
-                $db->real_escape_string($postal));
+        $sql = sprintf(
+                "INSERT INTO `customer`(`first_name`, `last_name`, `postal_code`, `street_name`, `house_number`, `city`, `phone_number`, `email_adress`) VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')",
+            $db->real_escape_string($firstName),
+            $db->real_escape_string($lastName),
+            $db->real_escape_string($postal),
+            $db->real_escape_string($streetName),
+            $db->real_escape_string($houseNumber),
+            $db->real_escape_string($city),
+            $db->real_escape_string($phoneNumber),
+            $db->real_escape_string($email)
+        );
 
-            $db->query($sql);
-            echo '<p>Gegevens opgeslagen!</p>';
-            $db->close();
-        }
+
+        $db->query($sql);
+        echo '<p>Gegevens opgeslagen!</p>';
+        $db->close();
+    } else {
+        echo '<p>Er is iets fout gegaan!</p>';
     }
 ?>
 
@@ -105,7 +153,7 @@
         <input type="text" name="lastname" placeholder="Achternaam"><br><br>
 
     Adres:
-        <input type="text" name="streetname" placeholder="Straatnaam">
+        <input type="text" name="street" placeholder="Straatnaam">
         <input type="text" name="housenumber" placeholder="Huisnummer"><br><br>
 
     Woonplaats:
@@ -114,24 +162,25 @@
 
     Contactgegevens:
         <input type="text" name="email" placeholder="Emailadres">
-        <input type="text" name="phonenumber" placeholder="Telefoonnummer"> <br><br>
+        <input type="text" name="phone" placeholder="Telefoonnummer"> <br><br>
     <hr style="width:40%;text-align:left;margin-left:0">
-<h2>Taak details</h2>
+
+    <h2>Taak details</h2>
 
     Titel:
         <input type="text" name="title" placeholder="Titel van de taak"><br><br>
 
     Beschrijving:
-        <textarea rows="4" cols="50" name="comment" form="usrform">Vul hier uw tekst in...</textarea><br><br>
+        <textarea rows="4" cols="50" name="description" form="usrform"></textarea><br><br>
 
     Deadline:
-        <input type="text" id="datepicker" name="date" placeholder="dd/mm/jjjj"> <br><br>
+        <input type="text" id="datepicker" name="deadline" placeholder="dd/mm/jjjj"> <br><br>
 
     Uurloon:
-    <input type="text" name="hourlywage" placeholder="Het uurloon van de werknemer"><br><br>
+    <input type="text" name="hourlywage" placeholder="bijv. €5,-"><br><br>
 
     Verwachte tijdsbesteding:
-    <input type="text" name="expectedtime" placeholder="Verwachte hoeveelheid tijd"><br><br>
+    <input type="text" name="timetocomplete" placeholder="bijv. 1 uur"><br><br>
 
     <hr style="width:40%;text-align:left;margin-left:0">
     <input type="submit" name="submit" value="Verzenden">
