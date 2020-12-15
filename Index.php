@@ -40,11 +40,7 @@
         }
 
         if($ok) {
-            $db = new mysqli(       //koppeling met database (op pc van Nils voor nu), don't touch. En ja, ik ga password en username aanpassen maar hij staat nu local en wachtwoord enzo krijg je meestal van de provider.
-                'localhost',
-                'root',
-                '',
-                'test_youngway');
+            require_once 'includes/database.php';
 
             $sql = sprintf(
                     "INSERT INTO `customer`(`first_name`, `last_name`, `postal_code`) VALUES ('%s', '%s', '%s')",
