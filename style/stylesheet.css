@@ -23,9 +23,6 @@ img {
     height: 60px;
 }
 
-li {
-}
-
 li a {
     display: block;
     color: #111111;
@@ -68,6 +65,12 @@ input   {
     width: 170px;
     padding: 5px;
 }
+
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+  }
 
 /*border-color: #E5E5E5;
 border-style: groove;

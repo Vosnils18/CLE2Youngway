@@ -57,6 +57,7 @@
         } else{
             $phoneNumber = $_POST['phone'];
         }
+        
         if(!isset($_POST['title']) || $_POST['title'] === '') {
             $ok = false;
         } else{
@@ -77,30 +78,62 @@
             $timeToComplete = $_POST['timetocomplete'];
         }
 
+        if($ok === true) {
+            require_once 'includes/database.php';
+    
+            $sql = sprintf(
+                    "INSERT INTO `customer`(`first_name`, `last_name`, `postal_code`, `street_name`, `house_number`, `city`, `phone_number`, `email_adress`) VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')",
+                    $db->real_escape_string($firstName),
+                    $db->real_escape_string($lastName),
+                    $db->real_escape_string($postal),
+                    $db->real_escape_string($streetName),
+                    $db->real_escape_string($houseNumber),
+                    $db->real_escape_string($city),
+                    $db->real_escape_string($phoneNumber),
+                    $db->real_escape_string($email)
+            );
+            $sqlS = sprintf(
+                "INSERT INTO `task_orders`(`task_name`, `task_description`, `wage`, `time_to_complete`, `task_deadline`) VALUES ('%s', '%s', '%s', '%s', '%s')",
+                $db->real_escape_string($title),
+                $db->real_escape_string($description),
+                $db->real_escape_string($hourlyWage),
+                $db->real_escape_string($timeToComplete),
+                $db->real_escape_string($deadline)
+            );
+    
+    
+            $db->query($sql);
+            $db->query($sqlS);
+            echo '
+                <style>
+                .alert {
+                    padding: 20px;
+                    background-color: #008000;
+                    color: white;
+                  }
+                </style>
+                <div class="alert"> 
+                    <strong>Gelukt!</strong> Uw gegevens zijn verzonden!.
+                </div>'
+            ;
+            $db->close();
+        } else {
+            echo '
+                <style>
+                .alert {
+                    padding: 20px;
+                    background-color: #f44336;
+                    color: white;
+                  }
+                </style>
+                <div class="alert"> 
+                    <strong>Oeps!</strong> Het lijkt er op dat er iets mis is gegaan, controleer of u alles goed heeft ingevuld.
+                </div>'
+            ;
+        }
+
     }
 
-    if($ok === true) {
-        require_once 'includes/database.php';
-
-        $sql = sprintf(
-                "INSERT INTO `customer`(`first_name`, `last_name`, `postal_code`, `street_name`, `house_number`, `city`, `phone_number`, `email_adress`) VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')",
-            $db->real_escape_string($firstName),
-            $db->real_escape_string($lastName),
-            $db->real_escape_string($postal),
-            $db->real_escape_string($streetName),
-            $db->real_escape_string($houseNumber),
-            $db->real_escape_string($city),
-            $db->real_escape_string($phoneNumber),
-            $db->real_escape_string($email)
-        );
-
-
-        $db->query($sql);
-        echo '<p>Gegevens opgeslagen!</p>';
-        $db->close();
-    } else {
-        echo '<p>Er is iets fout gegaan!</p>';
-    }
 ?>
 
 
@@ -134,7 +167,6 @@
 </ul>
 <!--Ik wil ook nog een topnav en een footer, daarnaast moet je ook nog de pagina opmaken en alles centreren-->
 
-<!--Formulier (nog niet aangepast aan de informatie die in de database moet komen, dat mag jij doen), zoek maar even op w3 voor de tags van een form ofzo.-->
 
  <header>
     <h1>Taak aanmaken</h1>
