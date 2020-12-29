@@ -106,13 +106,13 @@
             $db->query($sqlS);
             echo '
                 <style>
-                .alert {
+                .greenalert {
                     padding: 20px;
                     background-color: #008000;
                     color: white;
                   }
                 </style>
-                <div class="alert"> 
+                <div class="greenalert"> 
                     <strong>Gelukt!</strong> Uw gegevens zijn verzonden!.
                 </div>'
             ;
@@ -120,13 +120,13 @@
         } else {
             echo '
                 <style>
-                .alert {
+                .redalert {
                     padding: 20px;
                     background-color: #f44336;
                     color: white;
                   }
                 </style>
-                <div class="alert"> 
+                <div class="redalert"> 
                     <strong>Oeps!</strong> Het lijkt er op dat er iets mis is gegaan, controleer of u alles goed heeft ingevuld.
                 </div>'
             ;
