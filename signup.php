@@ -1,13 +1,10 @@
 <?php
+    include_once 'includes/header.html'
+
+    
 ?>
 
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="signupstyle.css">
-<title>Registeren</title>
-</head>
+
 <body>
 <h1>Registreren</h1>
 </body>
@@ -32,3 +29,7 @@
 
     <input type="submit" name="submit" value="Verzenden">
 </html>
+
+<?php
+    include_once 'includes/footer.html'
+?>
