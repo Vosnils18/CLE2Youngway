@@ -1,5 +1,7 @@
 <?php
 
+    include_once 'header.html';
+
     $firstName ='';
     $lastName = '';
     $streetName = '';
@@ -137,34 +139,7 @@
 ?>
 
 
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style/stylesheet.css">
 
-    <title>Taak aanmaken</title>
-    <!--Dit is de API voor de datum-kiezer (staat alleen nog online-->
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script>
-        $( function() {
-            $( "#datepicker" ).datepicker();
-        } );
-    </script>
-</head>
-
-
-
-<body>
-<ul>
-    <img src="images/Youngway_logo-300x78.png">
-    <li style="float:right"><a class="active" href="#home">Home</a></li>
-    <li style="float:right"><a href="#news">News</a></li>
-    <li style="float:right"><a href="#contact">Contact</a></li>
-    <li style="float:right"><a href="#about">About</a></li>
-</ul>
 <!--Ik wil ook nog een topnav en een footer, daarnaast moet je ook nog de pagina opmaken en alles centreren-->
 
 
@@ -222,3 +197,7 @@
 
 </body>
 </html>
+
+<?php
+    include_once 'footer.html';
+    ?>
