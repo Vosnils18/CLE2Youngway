@@ -9,22 +9,22 @@
 <hr>
 
 <div class="registercontainer">
-<form action="signup.inc.php" method="post">
+<form action="includes/signup.inc.php" method="post">
     
-    <label for="fname"><b>Voornaam</b></label><br>
-    <input type="text" placeholder="Voornaam" id="firstname" name="firstname" required><br><br>
-
-    <label for="lname"><b>Achternaam</b></label><br>
-    <input type="text" placeholder="Achternaam" id="lastname" name="lastname" required><br><br>
+    <label for="name"><b>Naam</b></label><br>
+    <input type="text" placeholder="John Doe" id="name" name="name" required><br><br>
 
     <label for="email"><b>Emailadres</b></label><br>
-    <input type="text" placeholder="Emailadres" name="email" id="email" required><br><br>
+    <input type="text" placeholder="john.doe@email.nl" name="email" id="email" required><br><br>
 
-    <label for="psw"><b>Wachtwoord</b></label><br>
-    <input type="password" placeholder="Wachtwoord" name="password" id="password" required><br><br>
+    <label for="username"><b>Gebruikernaam</b></label><br>
+    <input type="text" placeholder="JohnDoe123" id="username" name="username" required><br><br>
 
-    <label for="psw-repeat"><b>Herhaal wachtwoord</b></label><br>
-    <input type="password" placeholder="Herhaal wachtwoord" name="psw-repeat" id="psw-repeat" required><br>
+    <label for="pwd"><b>Wachtwoord</b></label><br>
+    <input type="password" placeholder="Wachtwoord" name="pwd" id="pwd" required><br><br>
+
+    <label for="pwdRepeat"><b>Herhaal wachtwoord</b></label><br>
+    <input type="password" placeholder="Herhaal wachtwoord" name="pwdRepeat" id="pwdRepeat" required><br>
     <hr>
 
 
