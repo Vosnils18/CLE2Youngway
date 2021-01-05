@@ -52,10 +52,10 @@ function uidExists($conn, $username, $email) {
         exit();
     }
     
-    mysqli_stmt_bind_param($stmt, 'ss', $username, $email);
+    mysqli_stmt_bind_param($stmt, "ss", $username, $email);
     mysqli_stmt_execute($stmt);
 
-    $resultData = mysqli_stmt_get_result();
+    $resultData = mysqli_stmt_get_result($stmt);
 
     if ($row = mysqli_fetch_assoc($resultData)) {
         return $row;
@@ -88,7 +88,7 @@ function createUser($conn, $name, $email, $username, $pwd) {
 
 function emptyInputLogin($username, $pwd) {
     $result;
-    if (empty($username) || empty($email)) {
+    if (empty($username) || empty($pwd)) {
         $result = true;
     }
     else {
@@ -115,7 +115,7 @@ function loginUser($conn, $username, $pwd) {
         session_start();
         $_SESSION["userid"] = $uidExists["user_id"];
         $_SESSION["username"] = $uidExists["username"];
-        header("location ../index.php");
+        header("location: ../index.php");
         exit();
     }
 }

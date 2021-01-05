@@ -10,11 +10,11 @@
 
 <ul>
     <img src="images/Youngway_logo-300x78.png">
-    <li style="float:right"><a class="active" href="#home">Home</a></li>
+    <li style="float:right"><a class="active" href="./index.php">Home</a></li>
     <?php
         if (isset($_SESSION['username'])) {
             echo '<li style="float:right"><a href="./userprofile.php">Profiel</a></li>';
-            echo '<li style="float:right"><a href="./logout.php">Uitloggen</a></li>';
+            echo '<li style="float:right"><a href="includes/logout.inc.php">Uitloggen</a></li>';
         }
         else {
             echo '<li style="float:right"><a href="./signup.php">Registreren</a></li>';
