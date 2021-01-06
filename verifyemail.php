@@ -38,7 +38,7 @@ $mail->Port = 587;
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 
 //Whether to use SMTP authentication
-$mail->SMTPAuth = false;
+$mail->SMTPAuth = true;
 
 //Username to use for SMTP authentication - use full email address for gmail
 $mail->Username = 'vosnils18@gmail.com';
@@ -46,18 +46,16 @@ $mail->Username = 'vosnils18@gmail.com';
 //Password to use for SMTP authentication
 $mail->Password = 'nilsisgoed1';
 
+$mail->isHTML(true);
+
 //Set who the message is to be sent from
-$mail->setFrom('vosnils18@gmail.com', 'Nils Vos');
+$mail->setFrom('noreply@griesmail.com', 'Nils Vos');
 
 //Set who the message is to be sent to
-$mail->addAddress('vosnils4@gmail.com', 'nelis de vries');
+$mail->addAddress('vosnils4@gmail.com', 'Nils Vos');
 
 //Set the subject line
 $mail->Subject = 'PHPMailer GMail SMTP test';
-
-//Read an HTML message body from an external file, convert referenced images to embedded,
-//convert HTML into a basic plain-text alternative body
-$mail->msgHTML(file_get_contents('emailcontents.html'), __DIR__);
 
 $mail->Body = 'HAAAAAAAAAAAAAAAAAAAAAA';
 
@@ -71,9 +69,9 @@ if (!$mail->send()) {
     echo 'Message sent!';
     //Section 2: IMAP
     //Uncomment these to save your message in the 'Sent Mail' folder.
-    if (save_mail($mail)) {
-        echo "Message saved!";
-    }
+    // if (save_mail($mail)) {
+    //     echo "Message saved!";
+    // }
 }
 
 //Section 2: IMAP
