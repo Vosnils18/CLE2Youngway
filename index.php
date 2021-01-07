@@ -65,3 +65,8 @@ if (isset($_GET["event"])) {
 </div>
 </body>
 </html>
+
+<?php
+include_once "includes/footer.html"
+
+?>
