@@ -12,7 +12,6 @@
 </head>
 
 <body>
-
 <div class="greenalert">
 <?php
     if (isset($_GET["event"])) {
@@ -35,6 +34,34 @@ if (isset($_GET["event"])) {
 }
 ?>
 </div>
+<div class="bg-image">
+    <div class="bg-text">
 
-<p></p>
+    <h1>Welkom bij Youngway</h1><br>
+    <h2>Ga hier opzoek naar de taak.</h2>
+        </div>
+        <form class="example" action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search2">
+            <button type="submit">zoek</button>
+        </form>
+
+    </div>
+</div>
+
+<div class="wayitworks">
+    <p>Hoe werkt het?</p>
+</div>
+
+<div class="quickguide">
+    <img src="images/placeholderimg.png" style="width:200px;height:200px;">
+    <img src="images/placeholderimg.png" style="width:200px;height:200px;">
+    <img src="images/placeholderimg.png" style="width:200px;height:200px;">
+</div>
+
+<div class="quickguide2">
+    <p>Stap 1</p>
+    <p>Stap 2</p>
+    <p>Stap 3</p>
+</div>
 </body>
+</html>

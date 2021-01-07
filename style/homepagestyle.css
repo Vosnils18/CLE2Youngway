@@ -30,3 +30,61 @@
 .closebtn:hover {
     color: black;
 }
+
+.bg-image {
+    background-image: url("https://cdn.discordapp.com/attachments/756128187418935326/788394163883474944/360_F_266975389_sBNp4HyE8gG58U62Fv2A6JTsaAVtLMk4.jpg");
+    background-size: cover;
+    margin: auto;
+    height: 250px;
+    width: 60%;
+}
+
+.bg-text {
+    position: center;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Arial Black";
+    font-size: 50px;
+    color: #3CB371;
+}
+
+form.example input[type=text] {
+    padding: 15px;
+    font-size: 17px;
+    border: 1px solid grey;
+    width:600px;
+}
+
+button {
+    padding: 15px;
+}
+
+.quickguide {
+    margin: auto;
+    height: 250px;
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.quickguide2 {
+    margin: auto;
+    height: 250px;
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.wayitworks {
+    text-align: center;
+    font-family: "Arial Black";
+    font-size: 30px;
+    color: #049B14;
+}
+
+
+
+
