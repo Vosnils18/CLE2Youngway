@@ -13,7 +13,7 @@
     <li style="float:right"><a class="active" href="./index.php">Home</a></li>
     <?php
         if (isset($_SESSION['username'])) {
-            echo '<li style="float:right"><a href="./userprofile.php">Profiel</a></li>';
+            echo '<li style="float:right"><a href="./profile.php">Profiel</a></li>';
             echo '<li style="float:right"><a href="includes/logout.inc.php">Uitloggen</a></li>';
         }
         else {
