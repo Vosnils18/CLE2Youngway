@@ -19,18 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a7d59fa8-f04a-4b4c-9a21-139e34bff8f0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/includes/userdata.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/functions.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/functions.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/profile.php" afterDir="false" />
-    </list>
+    <list default="true" id="a7d59fa8-f04a-4b4c-9a21-139e34bff8f0" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -59,7 +54,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents/#School/Programmeren 2/PRG02-2020-2021-master/week4/start/music-collection" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -77,6 +72,7 @@
       <option name="presentableId" value="Default" />
       <updated>1610024894786</updated>
       <workItem from="1610024896717" duration="9686000" />
+      <workItem from="1610040629001" duration="1549000" />
     </task>
     <servers />
   </component>
@@ -93,6 +89,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1610036176897">

@@ -83,6 +83,7 @@ function createUser($conn, $name, $email, $username, $pwd) {
     mysqli_stmt_close($stmt);
 
     header('location: ../signup.php?error=none');
+    mysqli_field_count($stmt);
     exit();
 }
 
@@ -115,7 +116,6 @@ function loginUser($conn, $username, $pwd) {
         session_start();
         $_SESSION["userid"] = $uidExists["user_id"];
         $_SESSION["username"] = $uidExists["username"];
-        $_SESSION["name"] = "";
         header("location: ../index.php?event=logincomplete");
         exit();
     }

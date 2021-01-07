@@ -25,9 +25,14 @@
                     if ($resultCheck > 0) {
                         while ($row = mysqli_fetch_assoc($result)) {
                             echo "<p>";
+                            echo "<div class='titel'>'";
                             echo "Gebruikersnaam: ";
+                            echo "<div>";
                             echo $row['username'];
-                            echo "<br><br> Volledige naam: ";
+                            echo "<br><br>";
+                            echo "<div class='titel'>";
+                            echo "Volledige naam: ";
+                            echo "<div>";
                             echo $row['name'];
                             echo "<br><br> Email: ";
                             echo $row['email'];
@@ -36,16 +41,15 @@
                                 echo "Niet opgegeven";
                             }
                             else {
-                                echo $row['streetname'];
-                                echo "<br>";
-                                echo $row['house_number'];
+                                echo $row['streetname'] . $row['house_number'];
                             }
+                            echo "</p>";
 
                         }
                     }
                 }
                 ?>
-        </div>
-    </body>
+            </div>
+        </body>
 
 </html>
