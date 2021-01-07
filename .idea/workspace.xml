@@ -20,8 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7d59fa8-f04a-4b4c-9a21-139e34bff8f0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/editprofile.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/even bewaren please.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/session.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,12 +53,16 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1mk5khDyHbmNwfbmcp54jrijy6a" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
     <option name="sortByType" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -94,14 +102,17 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1610036176897">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.3840.2120@0.0.1920.1040" timestamp="1610036176897" />
-    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1610034951974">
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1610045607416">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040/1920.0.3840.2120@0.0.1920.1040" timestamp="1610034951974" />
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040/1920.0.3840.2120@0.0.1920.1040" timestamp="1610045607416" />
   </component>
 </project>
