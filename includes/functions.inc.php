@@ -115,6 +115,7 @@ function loginUser($conn, $username, $pwd) {
         session_start();
         $_SESSION["userid"] = $uidExists["user_id"];
         $_SESSION["username"] = $uidExists["username"];
+        $_SESSION["name"] = "";
         header("location: ../index.php?event=logincomplete");
         exit();
     }
