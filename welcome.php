@@ -1,6 +1,5 @@
 <?php
 
-
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 
@@ -41,12 +40,16 @@ $mail->isHTML(true);
 $mail->setFrom('vosnils18@gmail.com', 'Nils Vos');
 
 //Set who the message is to be sent to
-$mail->addAddress('vosnils4@gmail.com', 'Nils Vos');
+$email = $_POST['email'];
+$name = $_POST['name'];
+$mail->addAddress($email, $name);
 
 //Set the subject line
-$mail->Subject = 'PHPMailer GMail SMTP test';
+$mail->Subject = 'Welkom bij Youngway!';
 
-$mail->Body = 'HAAAAAAAAAAAAAAAAAAAAAA';
+$mail->Body = "Hallo, <br> <br>
+               U hebt u onlangs ingeschreven op Youngway.nl <br>
+               Bedankt hiervoor en nog een fijne dag!";
 
 //Attach an image file
 $mail->addAttachment('images/Youngway_logo.png');
@@ -56,9 +59,5 @@ if (!$mail->send()) {
     echo 'Mailer Error: ' . $mail->ErrorInfo;
 } else {
     echo 'Message sent!';
-    //Section 2: IMAP
-    //Uncomment these to save your message in the 'Sent Mail' folder.
-    // if (save_mail($mail)) {
-    //     echo "Message saved!";
-    // }
+
 }

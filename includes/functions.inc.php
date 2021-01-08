@@ -82,7 +82,7 @@ function createUser($conn, $name, $email, $username, $pwd) {
     mysqli_stmt_execute($stmt);
     mysqli_stmt_close($stmt);
 
-    header('location: ../signup.php?error=none');
+    header('location: ../welcome.php');
     mysqli_field_count($stmt);
     exit();
 }
