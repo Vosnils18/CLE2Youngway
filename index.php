@@ -68,5 +68,5 @@ if (isset($_GET["event"])) {
 
 <?php
 include_once "includes/footer.html"
-
 ?>
+<br>
