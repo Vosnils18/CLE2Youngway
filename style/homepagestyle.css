@@ -34,9 +34,9 @@
 .bg-image {
     background-image: url("https://cdn.discordapp.com/attachments/756128187418935326/788394163883474944/360_F_266975389_sBNp4HyE8gG58U62Fv2A6JTsaAVtLMk4.jpg");
     background-size: cover;
-    margin: auto;
     height: 250px;
-    width: 60%;
+    width: 100%;
+    margin: auto;
 }
 
 .bg-text {
