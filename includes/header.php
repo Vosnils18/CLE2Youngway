@@ -23,4 +23,5 @@
     ?>
     <li style="float:right"><a href="#about">Contact</a></li>
 </ul>
+    <hr width="100%" color="#049B14" size="4">
 </head>
