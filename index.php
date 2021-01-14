@@ -3,17 +3,13 @@
 
 ?>
 
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style/errorstyle.css">
     <link rel="stylesheet" href="style/homepagestyle.css" type="text/css">
     <title>Youngway</title>
 </head>
 
 <body>
-<div class="greenalert">
-<?php
+<div class="greenalert"><?php
     if (isset($_GET["event"])) {
         if($_GET["event"] == "logoutcomplete") {
             echo
@@ -32,8 +28,8 @@ if (isset($_GET["event"])) {
         ;
     }
 }
-?>
-</div>
+?></div>
+
 <div class="bg-image">
     <div class="bg-text">
 

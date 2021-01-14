@@ -1,10 +1,13 @@
 <?php
 include_once "includes/header.php";
+require_once "includes/dbh.inc.php";
 
 if (!isset($_SESSION['username']) || $_SESSION['username'] == '') {
     header('location: index.php');
     exit();
 }
+
+
 ?>
 
 <!DOCTYPE html>

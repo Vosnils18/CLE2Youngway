@@ -1,0 +1,15 @@
+.redalert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+}
+
+.greenalert {
+    padding: 20px;
+    background-color: #008000;
+    color: white;
+}
+
+div:empty {
+    display:none;
+}

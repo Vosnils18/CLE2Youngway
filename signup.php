@@ -6,6 +6,7 @@
         exit();
     }
 ?>
+    <link rel="stylesheet" href="style/errorstyle.css">
 
 
 <body>
@@ -13,108 +14,41 @@
 </body>
 <hr>
 
-<?php
+<div class="redalert"><?php
     if(isset($_GET["error"])) {
         if($_GET["error"] == "emptyinput") {
-            echo '
-                <style>
-                .redalert {
-                    padding: 20px;
-                    background-color: #f44336;
-                    color: white;
-                  }
-                </style>
-                <div class="redalert"> 
-                    <strong>Oeps!</strong> Het lijkt er op dat er iets mis is gegaan, controleer of u alles goed heeft ingevuld.
-                </div>'
+            echo '<strong>Oeps!</strong> Het lijkt er op dat er iets mis is gegaan, controleer of u alles goed heeft ingevuld.'
             ;
         }
         else if($_GET["error"] == "invaliduid") {
-            echo '
-                <style>
-                .redalert {
-                    padding: 20px;
-                    background-color: #f44336;
-                    color: white;
-                  }
-                </style>
-                <div class="redalert"> 
-                    <strong>Oeps!</strong> De gebruikersnaam die u heeft gekozen voldoet niet aan de eisen.
-                </div>'
+            echo '<strong>Oeps!</strong> De gebruikersnaam die u heeft gekozen voldoet niet aan de eisen.'
             ;
         }
         else if($_GET["error"] == "invalidemail") {
-            echo '
-                <style>
-                .redalert {
-                    padding: 20px;
-                    background-color: #f44336;
-                    color: white;
-                  }
-                </style>
-                <div class="redalert"> 
-                    <strong>Oeps!</strong> Het lijkt er op dat u uw email verkeerd heeft ingevoerd.
-                </div>'
+            echo '<strong>Oeps!</strong> Het lijkt er op dat u uw email verkeerd heeft ingevoerd.'
             ;
         }
         else if($_GET["error"] == "pwdnomatch") {
-            echo '
-                <style>
-                .redalert {
-                    padding: 20px;
-                    background-color: #f44336;
-                    color: white;
-                  }
-                </style>
-                <div class="redalert"> 
-                    <strong>Oeps!</strong> De wachtwoorden die u heeft ingevoerd komen niet overeen.
-                </div>'
+            echo '<strong>Oeps!</strong> De wachtwoorden die u heeft ingevoerd komen niet overeen.'
             ;
         }
         else if($_GET["error"] == "uidtaken") {
-            echo '
-                <style>
-                .redalert {
-                    padding: 20px;
-                    background-color: #f44336;
-                    color: white;
-                  }
-                </style>
-                <div class="redalert"> 
-                    <strong>Oeps!</strong> De gebruikersnaam die u heeft gekozen is al in gebruik door een ander account.
-                </div>'
+            echo '<strong>Oeps!</strong> De gebruikersnaam die u heeft gekozen is al in gebruik door een ander account.'
             ;
         }
         else if($_GET["error"] == "stmtfailed") {
-            echo '
-                <style>
-                .redalert {
-                    padding: 20px;
-                    background-color: #f44336;
-                    color: white;
-                  }
-                </style>
-                <div class="redalert"> 
-                    <strong>Oeps!</strong> Er is iets fout gegaan, probeer het later nog eens of neem contact met ons op.
-                </div>'
+            echo '<strong>Oeps!</strong> Er is iets fout gegaan, probeer het later nog eens of neem contact met ons op.'
             ;
         }
-        else if($_GET["error"] == "none") {
-            echo '
-                <style>
-                .greenalert {
-                    padding: 20px;
-                    background-color: #008000;
-                    color: white;
-                  }
-                </style>
-                <div class="greenalert"> 
-                    <strong>Gelukt!</strong> Uw gegevens zijn verzonden!.
-                </div>'
+        ?></div>
+
+        <div class="greenalert"><?php
+       if($_GET["error"] == "none") {
+            echo '<strong>Gelukt!</strong> Uw gegevens zijn verzonden!.'
             ;
         }
     }
-?>
+?></div>
 
 <div class="registercontainer">
 <form action="includes/signup.inc.php" method="post">
