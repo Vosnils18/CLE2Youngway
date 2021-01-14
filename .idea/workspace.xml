@@ -21,11 +21,13 @@
   <component name="ChangeListManager">
     <list default="true" id="a7d59fa8-f04a-4b4c-9a21-139e34bff8f0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/even bewaren please.txt" beforeDir="false" afterPath="$PROJECT_DIR$/even_afblijven/even bewaren please.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/functions.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/functions.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/signup.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/signup.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/verifyemail.php" beforeDir="false" afterPath="$PROJECT_DIR$/even_afblijven/verifyemail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/welcome.php" beforeDir="false" afterPath="$PROJECT_DIR$/welcome.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleteaccount.php" beforeDir="false" afterPath="$PROJECT_DIR$/deleteaccount.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editprofile.php" beforeDir="false" afterPath="$PROJECT_DIR$/editprofile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/userdata.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/userdata.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/signup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/taskuploader.php" beforeDir="false" afterPath="$PROJECT_DIR$/taskuploader.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,11 +77,11 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\hr\CLE2Youngway\includes" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\hr\CLE2Youngway\even_afblijven" />
+      <recent name="C:\xampp\htdocs\hr\CLE2Youngway\includes" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\hr\CLE2Youngway\includes" />
     </key>
   </component>
@@ -93,6 +95,8 @@
       <updated>1610024894786</updated>
       <workItem from="1610024896717" duration="9686000" />
       <workItem from="1610040629001" duration="1549000" />
+      <workItem from="1610548760648" duration="1451000" />
+      <workItem from="1610620175939" duration="1436000" />
     </task>
     <servers />
   </component>

@@ -3,6 +3,10 @@
 
     require_once 'includes/userdata.php';
 
+    if (!isset($_SESSION['username']) || $_SESSION['username'] == '') {
+        header('location: index.php');
+        exit();
+    }
 ?>
 
 <html>

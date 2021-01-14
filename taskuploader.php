@@ -1,8 +1,10 @@
 <?php
-?>
+include_once "includes/header.php";
 
-<?php
-include_once "includes/header.php"
+if (!isset($_SESSION['username']) || $_SESSION['username'] == '') {
+    header('location: index.php');
+    exit();
+}
 ?>
 
 <!DOCTYPE html>

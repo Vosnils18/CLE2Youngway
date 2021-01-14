@@ -3,6 +3,11 @@
 include_once "includes/header.php";
 require_once "includes/dbh.inc.php";
 
+if (!isset($_SESSION['username']) || $_SESSION['username'] == '') {
+    header('location: index.php');
+    exit();
+}
+
 if (isset($_POST['submit'])) {
     $userId = mysqli_real_escape_string($conn, $_SESSION['userid']);
     $name = mysqli_real_escape_string($conn, $_POST['name']);

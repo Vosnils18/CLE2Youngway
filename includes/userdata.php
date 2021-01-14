@@ -2,6 +2,11 @@
 
 require_once "dbh.inc.php";
 
+if (!isset($_SESSION['username']) || $_SESSION['username'] == '') {
+    header('location: index.php');
+    exit();
+}
+
 //Get the result set from the database with a SQL query
 $userId = $_SESSION['userid'];
 $query = "SELECT * FROM useraccounts WHERE user_id = " . mysqli_real_escape_string($conn, $userId);
