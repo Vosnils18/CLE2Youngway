@@ -120,3 +120,32 @@ function loginUser($conn, $username, $pwd) {
         exit();
     }
 }
+
+function emptyInputTask($taskname, $hourlywage, $taskcat, $deadline, $description) {
+    $result;
+    if (empty($taskname) || empty($hourlywage) || empty($taskcat) || empty($deadline) || empty($description)) {
+        $result = true;
+    }
+    else {
+        $result = false;
+    }
+    return $result;
+}
+
+function createTask($conn, $userId, $taskname, $description, $hourlywage, $deadline, $taskcat) {
+    $sql = "INSERT INTO task_orders (user_id, task_name, task_description, wage, task_deadline, task_category) VALUES(?, ?, ?, ?, ?, ?);";
+    $stmt = mysqli_stmt_init($conn);
+    if (!mysqli_stmt_prepare($stmt, $sql)) {
+        header('location: ../taskuploader.php?error=stmtfailed');
+        exit();
+    }
+
+
+    mysqli_stmt_bind_param($stmt, 'ssssss', $userId, $taskname, $description, $hourlywage, $deadline, $taskcat);
+    mysqli_stmt_execute($stmt);
+    mysqli_stmt_close($stmt);
+
+    header('location: ../taskuploader.php?error=none');
+    mysqli_field_count($stmt);
+    exit();
+}

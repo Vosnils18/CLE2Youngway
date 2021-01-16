@@ -20,11 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7d59fa8-f04a-4b4c-9a21-139e34bff8f0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/style/errorstyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/taskuploader.inc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/includes/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/footerstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/footerstyle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/functions.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/functions.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/signup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/taskuploader.php" beforeDir="false" afterPath="$PROJECT_DIR$/taskuploader.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,11 +78,12 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\hr\CLE2Youngway\even_afblijven" />
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\hr\CLE2Youngway\includes" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\hr\CLE2Youngway\style" />
+      <recent name="C:\xampp\htdocs\hr\CLE2Youngway\even_afblijven" />
       <recent name="C:\xampp\htdocs\hr\CLE2Youngway\includes" />
     </key>
   </component>
@@ -96,7 +98,8 @@
       <workItem from="1610024896717" duration="9686000" />
       <workItem from="1610040629001" duration="1549000" />
       <workItem from="1610548760648" duration="1451000" />
-      <workItem from="1610620175939" duration="4524000" />
+      <workItem from="1610620175939" duration="5341000" />
+      <workItem from="1610791010138" duration="4953000" />
     </task>
     <servers />
   </component>
@@ -123,9 +126,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.3840.2120@0.0.1920.1040" timestamp="1610036176897" />
-    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1610054638761">
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1610792993866">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040/1920.0.3840.2120@0.0.1920.1040" timestamp="1610054638761" />
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040/1920.0.3840.2120@0.0.1920.1040" timestamp="1610792993866" />
   </component>
 </project>

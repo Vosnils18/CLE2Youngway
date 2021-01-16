@@ -22,6 +22,11 @@
         }
     ?>
     <li style="float:right"><a href="#about">Contact</a></li>
+    <?php
+        if(isset($_SESSION['username'])) {
+            echo '<li style="float:right; background-color:green; color:white;"><a href="./taskuploader.php">Taak aanmaken</a></li>';
+        }
+    ?>
 </ul>
     <hr width="100%" color="#049B14" size="4">
 </head>

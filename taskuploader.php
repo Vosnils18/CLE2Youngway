@@ -16,7 +16,7 @@ if (!isset($_SESSION['username']) || $_SESSION['username'] == '') {
 
 <body>
 <div>
-    <form action="./taskuploader.php">
+    <form action="includes/taskuploader.inc.php" method="post">
         <label for="taskname">Naam van klus:</label>
         <input type="text" id="taskname" name="taskname" placeholder="klusnaam..." required>
 
@@ -41,10 +41,8 @@ if (!isset($_SESSION['username']) || $_SESSION['username'] == '') {
 
         <label for="taskdescription">Beschrijving van taak </label>
         <input style="padding-bottom: 4% " type="text" placeholder="informatie klus..." name="temp1" required>
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" name="submit">
     </form>
 </div>
-</form>
 </body>
 </html>
-
