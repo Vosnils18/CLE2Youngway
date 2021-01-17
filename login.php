@@ -6,12 +6,14 @@
         exit();
     }
 ?>
-
+    <!DOCTYPE html>
+    <html lang="en">
+    <link rel="stylesheet" type="text/css" href="style/loginregisterstyle.css"/>
 
 <body>
-<h1>inloggen</h1>
+<h1>Inloggen</h1>
 </body>
-<hr>
+    <hr width="100%" color="#049B14" size="4">
 
 <?php
     if(isset($_GET["error"])) {
@@ -56,14 +58,10 @@
     <input type="password" placeholder="Wachtwoord" name="pwd" id="pwd" required><br><br>
 
 
-    <button type="submit" name="submit">log in</button>
+    <input type="submit" value="Inloggen" name="submit">
 
 </form>
 
 </div>
-
 </html>
 
-<?php
-    include_once 'includes/footer.html'
-?>

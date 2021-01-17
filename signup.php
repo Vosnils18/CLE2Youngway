@@ -12,7 +12,7 @@
 <body>
 <h1>Registreren</h1>
 </body>
-<hr>
+    <hr width="100%" color="#049B14" size="4">
 
 <div class="redalert"><?php
     if(isset($_GET["error"])) {
@@ -49,7 +49,7 @@
         }
     }
 ?></div>
-
+<link rel="stylesheet" href="style/loginregisterstyle.css">
 <div class="registercontainer">
 <form action="includes/signup.inc.php" method="post">
     
@@ -67,17 +67,13 @@
 
     <label for="pwdRepeat"><b>Herhaal wachtwoord</b></label><br>
     <input type="password" placeholder="Herhaal wachtwoord" name="pwdRepeat" id="pwdRepeat" required><br>
-    <hr>
 
 
-    <button type="submit" name="submit">Registreren</button>
+
+    <input type="submit" name="submit" value="Registreren">
 
 </form>
 
 </div>
 
 </html>
-
-<?php
-    include_once 'includes/footer.html'
-?>
