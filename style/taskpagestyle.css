@@ -1,0 +1,48 @@
+.backgroundpage {
+    background-image: url("https://cdn.discordapp.com/attachments/756128187418935326/788394163883474944/360_F_266975389_sBNp4HyE8gG58U62Fv2A6JTsaAVtLMk4.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+}
+
+.tempor1 {
+    display: grid;
+    justify-content: space-between;
+    background-color: #ffffff;
+    width: 60%;
+    height: 15%;
+    margin: auto;
+    padding: 10px;
+    border: 2px solid #049B14;
+    border-radius: 10px;
+    grid-template-columns: 90% 10%;
+    grid-template-rows: 15% 10% 70%;
+
+}
+
+.titletask {
+    font-size: 200%;
+}
+
+.categorytask {
+    margin-top: 10px;
+}
+.deadlinedate {
+
+}
+
+.descriptiontask {
+    margin-top: 15px;
+    margin-right: 20px;
+    grid-column: 1 / 3;
+}
+
+ /*.tempor1 > div {
+    background-color: #ffffff;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
