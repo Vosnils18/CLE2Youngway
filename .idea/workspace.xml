@@ -20,12 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7d59fa8-f04a-4b4c-9a21-139e34bff8f0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/includes/taskuploader.inc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/includes/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/footerstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/footerstyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/functions.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/functions.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/taskuploader.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/taskuploader.inc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/taskuploader.php" beforeDir="false" afterPath="$PROJECT_DIR$/taskuploader.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +95,8 @@
       <workItem from="1610040629001" duration="1549000" />
       <workItem from="1610548760648" duration="1451000" />
       <workItem from="1610620175939" duration="5341000" />
-      <workItem from="1610791010138" duration="4953000" />
+      <workItem from="1610791010138" duration="5693000" />
+      <workItem from="1610889105919" duration="3018000" />
     </task>
     <servers />
   </component>

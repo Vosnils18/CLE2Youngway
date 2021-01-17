@@ -1,5 +1,6 @@
 <?php
 if (isset($_POST['submit'])) {
+    require_once "header.php";
 
     $taskname = $_POST['taskname'];
     $hourlywage = $_POST['hourlywage'];
@@ -12,11 +13,11 @@ if (isset($_POST['submit'])) {
     require_once 'functions.inc.php';
 
     if(emptyInputTask($taskname, $hourlywage, $taskcat, $deadline, $description) !== false) {
-        header('location: ../signup.php?error=emptyinput');
+        header('location: ../taskuploader.php?error=emptyinput');
         exit();
     }
 
-    createTask($conn, $userId, $description, $taskname, $hourlywage, $deadline, $taskcat);
+    createTask($conn, $userId, $taskname, $description, $hourlywage, $deadline, $taskcat);
 
 }
 else {
