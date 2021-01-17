@@ -6,8 +6,6 @@ if (!isset($_SESSION['username']) || $_SESSION['username'] == '') {
     header('location: index.php');
     exit();
 }
-
-
 ?>
 
 <!DOCTYPE html>
