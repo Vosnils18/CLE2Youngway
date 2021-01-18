@@ -2,7 +2,7 @@
 if (isset($_POST['submit'])) {
     require_once "header.php";
 
-    $taskname = $_POST['taskname'];
+    $taskname = htmlspecialchars($_POST['taskname'], );
     $hourlywage = $_POST['hourlywage'];
     $userId = $_SESSION['userid'];
     $taskcat = $_POST['taskcat'];
