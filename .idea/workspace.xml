@@ -20,9 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7d59fa8-f04a-4b4c-9a21-139e34bff8f0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/idc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/userdata.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/userdata.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/footerstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/footerstyle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/taskpage.php" beforeDir="false" afterPath="$PROJECT_DIR$/taskpage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/welcome.php" beforeDir="false" afterPath="$PROJECT_DIR$/welcome.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +74,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -82,6 +86,20 @@
       <recent name="C:\xampp\htdocs\hr\CLE2Youngway\even_afblijven" />
       <recent name="C:\xampp\htdocs\hr\CLE2Youngway\includes" />
     </key>
+  </component>
+  <component name="RunManager" selected="PHP Script.index.php">
+    <configuration name="footer.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CLE2Youngway/includes/footer.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/index.php">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHP Script.index.php" />
+        <item itemvalue="JavaScript Debug.footer.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -98,7 +116,8 @@
       <workItem from="1610791010138" duration="5693000" />
       <workItem from="1610889105919" duration="4268000" />
       <workItem from="1610961462671" duration="7504000" />
-      <workItem from="1611053009548" duration="725000" />
+      <workItem from="1611053009548" duration="1267000" />
+      <workItem from="1611062823894" duration="12940000" />
     </task>
     <servers />
   </component>
@@ -125,9 +144,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.3840.2120@0.0.1920.1040" timestamp="1610975290450" />
-    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1610792993866">
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1611094230505">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040/1920.0.3840.2120@0.0.1920.1040" timestamp="1610792993866" />
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040/1920.0.3840.2120@0.0.1920.1040" timestamp="1611094230505" />
+    <state x="616" y="490" key="run.anything.popup" timestamp="1611094773451">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="490" key="run.anything.popup/0.0.1920.1040/1920.0.3840.2120@0.0.1920.1040" timestamp="1611094773451" />
   </component>
 </project>

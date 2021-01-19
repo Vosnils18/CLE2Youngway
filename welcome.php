@@ -61,3 +61,4 @@ if (!$mail->send()) {
     echo 'Message sent!';
 
 }
+header('location: index.php');

@@ -18,8 +18,9 @@ if(mysqli_num_rows($result)) {
         $taskname = $row['task_name'];
         $deadline = $row['task_deadline'];
         $description = $row['task_description'];
+        $category = $row['task_category'];
 
-        $output = array('taskname'=>$taskname, 'deadline'=>$deadline, 'description'=>$description);
+        $output = array('taskname'=>$taskname, 'deadline'=>$deadline, 'description'=>$description, 'category'=>$category);
         ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -30,7 +31,7 @@ if(mysqli_num_rows($result)) {
 <div class="tempor1">
     <div class="titletask"><?php echo $output['taskname']; ?></div>
     <div class="deadlinedate"><?php echo $output['deadline']; ?></div>
-    <div class="categorytask">Elektronica</div>
+    <div class="categorytask"><?php echo $output['category']; ?></div>
     <div class="descriptiontask">
         <p><?php echo $output['description']; ?></p>
     </div>

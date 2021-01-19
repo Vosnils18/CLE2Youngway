@@ -21,3 +21,6 @@ while ($row = mysqli_fetch_assoc($result)) {
 
 //Close connection
 mysqli_close($conn);
+
+?>
+
