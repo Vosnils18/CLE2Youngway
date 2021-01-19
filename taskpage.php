@@ -3,12 +3,14 @@ include_once "includes/header.php";
 $taskname = '';
 $deadline = '';
 $description = '';
+$searchterm = $_POST['search2'];
 
 $output = array();
 
 require_once "includes/dbh.inc.php";
 
-$query = "SELECT * FROM task_orders";
+
+$query = "SELECT * FROM task_orders WHERE task_name LIKE '$searchterm'";
 
 $result = mysqli_query($conn, $query);
 if(mysqli_num_rows($result)) {

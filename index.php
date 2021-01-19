@@ -34,10 +34,10 @@ if (isset($_GET["event"])) {
     <div class="bg-text">
 
     <h1>Welkom bij Youngway</h1><br>
-    <h2>Ga hier opzoek naar de taak.</h2>
+    <h2>Ga hier opzoek naar een taak.</h2>
         </div>
-        <form class="example" action="/action_page.php">
-            <input type="text" placeholder="Search.." name="search2">
+        <form class="example" action="taskpage.php" method="post">
+            <input type="text" placeholder="Zoeken.." name="search2">
             <button type="submit">zoek</button>
         </form>
 
