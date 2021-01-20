@@ -1,3 +1,11 @@
 footer {
-    background-color: grey;
+    background-color: #cccccc;
+    position:absolute;
+    bottom:0;
+    width: 100%;
+    border-top: 4px solid #049B14;
+}
+
+.row {
+    margin-left: 5%;
 }
